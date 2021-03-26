@@ -152,51 +152,21 @@ public class PartidaXadres {
 		}
 
 		// jogada roque pequeno
-//		if(p instanceof Rei && fim.getColuna() == origem.getColuna() + 2) {
-//			Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() + 3);
-//			Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() + 1);
-//			PecaXadres rei = (PecaXadres)tabuleiro.removePeca(oringemT);
-//			tabuleiro.lugarPeca(rei, fimT);
-//			rei.incrementarContJogada();
-//		}
-		if (p instanceof Rei && p.getCor() == Cor.BRANCO) {
-			if(p instanceof Rei && fim.getColuna() == origem.getColuna() + 2) {
-				Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() + 3);
-				Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() + 1);
-				PecaXadres rei = (PecaXadres)tabuleiro.removePeca(oringemT);
-				tabuleiro.lugarPeca(rei, fimT);
-				rei.incrementarContJogada();
-			} else if(p instanceof Rei && fim.getColuna() == origem.getColuna() - 2) {
-				Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() - 4);
-				Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() + 1);
-				PecaXadres rei = (PecaXadres)tabuleiro.removePeca(oringemT);
-				tabuleiro.lugarPeca(rei, fimT);
-				rei.incrementarContJogada();
-			}
+		if(p instanceof Rei && fim.getColuna() == origem.getColuna() + 2) {
+			Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() + 3);
+			Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() + 1);
+			PecaXadres rei = (PecaXadres)tabuleiro.removePeca(oringemT);
+			tabuleiro.lugarPeca(rei, fimT);
+			rei.incrementarContJogada();
 		}
 
 		// jogada roque grande
-//		if(p instanceof Rei && fim.getColuna() == origem.getColuna() - 2) {
-//			Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() - 4);
-//			Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() - 1);
-//			PecaXadres rei = (PecaXadres)tabuleiro.removePeca(oringemT);
-//			tabuleiro.lugarPeca(rei, fimT);
-//			rei.incrementarContJogada();
-//		}
-		if (p instanceof Rei && p.getCor() == Cor.BRANCO) {
-			if(p instanceof Rei && fim.getColuna() == origem.getColuna() - 2) {
-				Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() - 4);
-				Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() - 1);
-				PecaXadres rei = (PecaXadres)tabuleiro.removePeca(oringemT);
-				tabuleiro.lugarPeca(rei, fimT);
-				rei.incrementarContJogada();
-			} else if(p instanceof Rei && fim.getColuna() == origem.getColuna() + 2) {
-				Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() + 3);
-				Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() - 1);
-				PecaXadres rei = (PecaXadres)tabuleiro.removePeca(oringemT);
-				tabuleiro.lugarPeca(rei, fimT);
-				rei.incrementarContJogada();
-			}
+		if(p instanceof Rei && fim.getColuna() == origem.getColuna() - 2) {
+			Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() - 4);
+			Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() - 1);
+			PecaXadres rei = (PecaXadres)tabuleiro.removePeca(oringemT);
+			tabuleiro.lugarPeca(rei, fimT);
+			rei.incrementarContJogada();
 		}
 
 		// jogada en Passant
@@ -229,51 +199,21 @@ public class PartidaXadres {
 		}
 
 		// jogada roque pequeno
-//		if(p instanceof Rei && fim.getColuna() == origem.getColuna() + 2) {
-//			Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() + 3);
-//			Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() + 1);
-//			PecaXadres rei = (PecaXadres)tabuleiro.removePeca(fimT);
-//			tabuleiro.lugarPeca(rei, oringemT);
-//			rei.incrementarContJogada();
-//		}
-		if (p instanceof Rei && p.getCor() == Cor.BRANCO) {
-			if(p instanceof Rei && fim.getColuna() == origem.getColuna() + 2) {
-				Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() + 3);
-				Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() + 1);
-				PecaXadres rei = (PecaXadres)tabuleiro.removePeca(fimT);
-				tabuleiro.lugarPeca(rei, oringemT);
-				rei.incrementarContJogada();
-			} else if(p instanceof Rei && fim.getColuna() == origem.getColuna() - 2){
-				Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() - 4);
-				Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() + 1);
-				PecaXadres rei = (PecaXadres)tabuleiro.removePeca(fimT);
-				tabuleiro.lugarPeca(rei, oringemT);
-				rei.incrementarContJogada();
-			}
+		if(p instanceof Rei && fim.getColuna() == origem.getColuna() + 2) {
+			Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() + 3);
+			Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() + 1);
+			PecaXadres rei = (PecaXadres)tabuleiro.removePeca(fimT);
+			tabuleiro.lugarPeca(rei, oringemT);
+			rei.incrementarContJogada();
 		}
 
 		// jogada roque grande
-//		if(p instanceof Rei && fim.getColuna() == origem.getColuna() - 2) {
-//			Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() - 4);
-//			Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() - 1);
-//			PecaXadres rei = (PecaXadres)tabuleiro.removePeca(fimT);
-//			tabuleiro.lugarPeca(rei, oringemT);
-//			rei.incrementarContJogada();
-//		}
-		if (p instanceof Rei && p.getCor() == Cor.BRANCO) {
-			if(p instanceof Rei && fim.getColuna() == origem.getColuna() - 2) {
-				Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() - 4);
-				Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() - 1);
-				PecaXadres rei = (PecaXadres)tabuleiro.removePeca(fimT);
-				tabuleiro.lugarPeca(rei, oringemT);
-				rei.incrementarContJogada();
-			} else if(p instanceof Rei && fim.getColuna() == origem.getColuna() + 2) {
-				Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() + 3);
-				Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() - 1);
-				PecaXadres rei = (PecaXadres)tabuleiro.removePeca(fimT);
-				tabuleiro.lugarPeca(rei, oringemT);
-				rei.incrementarContJogada();
-			}
+		if(p instanceof Rei && fim.getColuna() == origem.getColuna() - 2) {
+			Posicao oringemT = new Posicao(origem.getLinha(), origem.getColuna() - 4);
+			Posicao fimT = new Posicao(origem.getLinha(), origem.getColuna() - 1);
+			PecaXadres rei = (PecaXadres)tabuleiro.removePeca(fimT);
+			tabuleiro.lugarPeca(rei, oringemT);
+			rei.incrementarContJogada();
 		}
 
 		// jogada en Passant
